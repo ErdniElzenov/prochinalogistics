@@ -1,0 +1,176 @@
+.services-title {
+    color: rgb(0, 0, 0);
+}
+
+.solutions-title {
+    padding: 25px 20px;
+    color: brown;
+    font-weight: 900;
+}
+
+.solutions-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+
+}
+
+
+.box {
+
+    background: url('/imag/5.png') no-repeat;
+}
+
+.box1 {
+
+    background: url('/imag/6.png') no-repeat;
+}
+
+.box2 {
+
+    background: url('/imag/7.png') no-repeat;
+}
+
+.box3 {
+
+    background: url('/imag/8.png') no-repeat;
+}
+
+.box4 {
+
+    background: url('/imag/9.png') no-repeat;
+}
+
+.box5 {
+
+    background: url('/imag/10.png') no-repeat;
+}
+
+.box6 {
+
+    background: url('/imag/11.png') no-repeat;
+}
+
+.box7 {
+
+    background: url('/imag/12.png') no-repeat;
+}
+
+.solution-box {
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 200px;
+    font-weight: 700;
+    line-height: 180%;
+    width: 260px;
+    height: 270px;
+    margin: 0 20px 0 20px;
+    border-radius: 20px;
+    box-shadow: 1px 0px 10px 0px rgba(72, 103, 107, 0.507);
+}
+
+
+
+
+.solution-img {
+    border-radius: 20px 20px 0 0;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-container {
+    padding: 100px 0 0 40px;
+    font-size: 14px;
+    color: #000000;
+}
+
+.modal-button:hover {
+    color: #ffffff;
+    background-color: rgb(104, 101, 101);
+}
+
+/* Дополнительные стили для кнопки Отмена */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Центрируйте изображение и установите кнопку Закрыть */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Модальный (фон) */
+.modal1 {
+    display: none;
+    /* Скрыто по умолчанию */
+    position: fixed;
+    /* Оставаться на месте */
+    z-index: 4;
+    /* Сидеть на вершине */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Полная ширина */
+    height: 100%;
+    /* Полная высота */
+    overflow: auto;
+    /* Включите прокрутку, если это необходимо */
+    background-color: rgb(0, 0, 0);
+    /* Цвет запасной вариант  */
+    background-color: rgba(0, 0, 0, 0.712);
+    /*Черный с непрозрачностью */
+    padding-top: 60px;
+}
+
+/* Модальное содержание/бокс */
+.modal-content1 {
+    background-color: #fefefeef;
+    width: 1200px;
+    /* Может быть больше или меньше, в зависимости от размера экрана */
+    height: 800px;
+    z-index: 4;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.solution-text {
+    padding: 20px 30px 0 30px;
+}
+.solution-text> h1{
+    color: brown;
+}
+.solution-text> h2{
+    color: brown;
+}
+.solution-info {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.solution-boxmod {
+    background-color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 20px 25px;
+    width: 330px;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 1px 0px 10px 0px rgba(72, 103, 107, 0.507);
+padding: 20px 20px;
+}
+.solution-img{
+    margin-bottom: 160px;
+}

@@ -1,0 +1,534 @@
+body {
+
+  margin: 0;
+  font-family: 'Montserrat';
+  font-size: 17px;
+}
+
+.procinalogistics {
+  margin: 10px 50px;
+}
+
+.ove {
+display: none;
+}
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  opacity: 1;
+
+  cursor: pointer;
+}
+
+.menu {
+  display: block;
+  background-color: #ffffff;
+  position: sticky;
+  width: 100%;
+  height: 60px;
+  border-bottom: 2px solid;
+  color: #aaa5a5;
+padding-top: 5px;
+  top: 0%;
+  left: 0px;
+  z-index: 3;
+}
+
+.menu__morgin {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 50px;
+
+  color: #000000;
+  top: 0;
+}
+.red>a{
+  color: rgb(0, 0, 0);
+}
+.red>a:hover{
+  color: brown;
+}
+
+.logo {
+  padding: 10px 0;
+  font-weight: 800;
+  color: brown;
+}
+.logo>a {
+  color: brown;
+}
+.contacts__info {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 600;
+  margin-right: 10px;
+  padding: 0 10px;
+}
+
+.contacts__info-link {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.contacts__button {
+  background-color: brown;
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 15px;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 5px;
+}
+
+.contacts__button:hover {
+  color: #ffffff;
+  background-color: rgb(104, 101, 101);
+}
+
+.fa {
+  background-color: rgb(255, 255, 255);
+  padding: 0 1px;
+  font-size: 1.5rem;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.fa:hover {
+  color: brown;
+}
+
+.dropbtn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-family: 'Montserrat';
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.triangle {
+  font-size: 14px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: brown;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: brown;
+}
+
+
+
+
+
+.modal-input-text{
+  background-color: #ffffff00;
+  width: 90%;
+  box-sizing: border-box;
+  font-size: 20px;
+  padding: 40px 3px;
+  border: 1px solid #ffffff00;
+  outline: none;
+  border-bottom: 1px solid #000000;
+ z-index: 10;
+}
+
+.modal-input {
+  background-color: #ffffff00;
+  width: 90%;
+  box-sizing: border-box;
+  font-size: 20px;
+  padding: 20px 3px;
+  border: 1px solid #ffffff00;
+  outline: none;
+  border-bottom: 1px solid #000000;
+
+
+}
+
+.modal-container {
+  display: block;
+  padding: 100px 0 0 40px;
+  font-size: 14px;
+  color: #000000;
+  z-index: 10;
+}
+
+.modal-button:hover {
+  color: #ffffff;
+  background-color: rgb(104, 101, 101);
+}
+/* Дополнительные стили для кнопки Отмена */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Центрируйте изображение и установите кнопку Закрыть */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Модальный (фон) */
+.modal {
+  display: none;
+  /* Скрыто по умолчанию */
+  position: fixed;
+  /* Оставаться на месте */
+  z-index: 10;
+  /* Сидеть на вершине */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Полная ширина */
+  height: 100%;
+  /* Полная высота */
+  overflow: auto;
+  /* Включите прокрутку, если это необходимо */
+  background-color: rgb(0, 0, 0);
+  /* Цвет запасной вариант  */
+  background-color: rgba(0, 0, 0, 0.712);
+  /*Черный с непрозрачностью */
+  padding-top: 60px;
+}
+
+/* Модальное содержание/бокс */
+.modal-content {
+  background-color: #fefefeef;
+  width: 500px;
+  /* Может быть больше или меньше, в зависимости от размера экрана */
+  height: 800px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-button{
+  background-color: brown;
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 15px;
+  border: none;
+  padding: 20px 40px 20px 40px;
+  margin: 50px 60px 30px 120px;
+}
+/* Кнопка закрытия (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: brown;
+  cursor: pointer;
+}
+
+/* Добавить анимацию масштабирования */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* Измените стили для кнопки span и cancel на очень маленьких экранах */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+
+.background {
+  position: relative;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+}
+
+.background-text {
+  background-color: #0e04139f;
+  position: relative;
+  z-index: 2;
+  height: 380px;
+  flex: 1 1 auto;
+  color: #ffffff;
+  padding: 100px 240px 0 100px;
+  flex-direction: column;
+  border-radius: 30px;
+
+
+
+}
+.bacground-button{
+  margin-top: 50px;
+}
+
+.element-animation {
+  margin: 0 0;
+  opacity: 0;
+  transform: translateX(20%);
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 1.8s;
+  transform: translateY(0%);
+}
+
+.background-logo {
+  background-color: #ffffff91;
+  padding: 10px 10px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+.container {
+
+  width: 1200px;
+  border-radius: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.services-container {
+  background-color: rgb(255, 255, 255);
+
+  color: #000000;
+  width: 510px;
+  height: 300px;
+  padding: 15px 25px;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: 0px 4px 20px 2px rgba(72, 103, 107, 0.507);
+}
+
+.services-img {
+  margin-bottom: 60px;
+}
+
+.company {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+
+}
+
+.company-info {
+  padding: 0 10px;
+  width: 400px;
+  line-height: 180%;
+
+}
+
+.company-img {
+  width: 750px;
+  height: 100%;
+}
+
+.partners {
+  background-color: #aaa5a5;
+  width: 100%;
+  height: 450px;
+  border-radius: 25px;
+  margin-bottom: 80px;
+}
+
+.partners-text {
+  padding: 60px 0;
+}
+
+.partners-title {
+  color: #ffffff;
+  font-size: 50px;
+
+}
+
+.partners-button {
+  background-color: brown;
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 15px;
+  border: none;
+  padding: 20px 40px 20px 40px;
+  margin: 50px 0;
+}
+
+.contactsend {
+  background-image: url(/imag/cont.jpg);
+  -moz-background-size: 100%;
+
+  -webkit-background-size: 100%;
+  
+  -o-background-size: 100%;
+
+  background-size: 100%;
+ 
+  width: 100%;
+  height: 700px;
+  color: #ffffff;
+}
+
+.contactsend-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactsend-content {
+  background-color: #000000c2;
+  width: 100%;
+  height: 100%;
+
+}
+
+.contactsend-text {
+  width: 50%;
+  padding: 5% 10%;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.contactsend-forma {
+
+  padding: 5% 10%;
+}
+
+.contactsend-send {
+  background-color: #ffffffdc;
+  width: 310px;
+  height: 450px;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 20px 20px;
+  color: #000000;
+}
+
+.input {
+  background-color: #ffffff00;
+  font-size: 20px;
+  width: 300px;
+  padding: 15px 3px;
+  border: 1px solid #ffffff00;
+  outline: none;
+  border-bottom: 1px solid #000000;
+
+}
+
+.contactsend-button {
+  background-color: brown;
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 15px;
+  border: none;
+  padding: 20px 40px 20px 40px;
+  margin: 50px 60px 10px 60px;
+}
+.contactsend-button:hover {
+  color: #ffffff;
+  background-color: rgb(104, 101, 101);
+}
+.contactsend__button:hover {
+  color: #ffffff;
+  background-color: rgb(104, 101, 101);
+}
