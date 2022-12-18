@@ -21,8 +21,8 @@ app.post("/", urlencodedParser, function (request, response) {
     port: 465,
     secure: true, 
     auth: {
-      user: "prochinalogistics@mail.ru", 
-      pass: "BPESD0KcAbsnvkQQDJyx" 
+      user: "", 
+      pass: "" 
     }
   });
       
